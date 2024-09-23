@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider</title>
+    <!-- *** Style Css File *** -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- slider container -->
+    <div class="slider-container">
+        <!-- slider image -->
+        <div class="slider">
+            <div class="slide"><img src="https://via.placeholder.com/800x400" alt="image 1"></div>
+            <div class="slide"><img src="https://via.placeholder.com/800x400" alt="image 2"></div>
+            <div class="slide"><img src="https://via.placeholder.com/800x400" alt="image 3"></div>
+        </div>
+        
+        <!-- pagination Dot -->
+        <div class="pagination">
+            <span class="dot" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+
+        <!-- prev and next Buttons -->
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <!-- *** JavaScript File *** -->
+    <script src="active.js"></script>
+</body>
+</html>
