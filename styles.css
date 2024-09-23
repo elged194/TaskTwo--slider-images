@@ -13,6 +13,7 @@ body {
     background-color: #f3f3f3;
 }
 
+/* slider container */
 .slider-container {
     position: relative;
     width: 90%;
@@ -20,6 +21,7 @@ body {
     overflow: hidden;
 }
 
+/* slider */
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -35,6 +37,7 @@ body {
     display: block;
 }
 
+/* pagination */
 .pagination {
     position: absolute;
     bottom: 15px;
@@ -57,7 +60,9 @@ body {
     background-color: #717171;
 }
 
-.prev, .next {
+/* prev and next Buttons  */
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -78,7 +83,9 @@ body {
 }
 
 @media (max-width: 600px) {
-    .prev, .next {
+
+    .prev,
+    .next {
         font-size: 14px;
         padding: 8px;
     }
